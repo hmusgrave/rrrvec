@@ -1,19 +1,12 @@
 # rrrvec
 
-(Unfinished) A simple RRR Vector implementation using SIMD in Cython and backed by Zig.
+A simple RRR Vector implementation using SIMD in Cython and backed by Zig.
 
-# Why this project exists
-There aren't many examples of using SIMD or alternative compilers with Cython,
-and that feels like a shame given how simple it is. RRR Vectors in particular
-were chosen because they're just non-trivial enough to make the SIMD
-interesting, and there aren't any great python implementations yet.
-
-Given the purpose, a plethora of features such as arbitrary chunk/superblock
-sizes is a non-goal. We'll start by implementing rank and select, we'll
-probably include extension and truncation methods, if it isn't too unwieldy
-we'll add bit deletion, we'll definitely support a reasonably efficient copy
-method, and the interface for slicing is still to-be-decided. Other features
-are probably out of scope.
+# Status
+Unfinished, unmaintained. Snippets might selectively be useful to somebody curious how to:
+- Use alternative compiler backends for Cython
+- Use SIMD instructions in their Cython
+- Abuse the AVX instruction set to get a limited-use vectorized 8-bit multiply
 
 # Description
 
